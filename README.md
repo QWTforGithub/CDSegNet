@@ -57,15 +57,15 @@ sh compile.sh
 ## Model Zoo
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
-| CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [link](-) |
-| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.4% | - | [link](-) |
-| PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% | [link](-) |
-| CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% | [link](-) |
-| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% |[link](-) |
-| PTv3 | ScanNet200 | &check;  | 4 | 35.3% | 33.2% |[link](-) |
-| PTv3 | nuScenes |     &check;     | 4 | 81.2% | 82.0% |[link](-) |
-| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% | [link](-) |
-| PTv3 | nuScenes |     &check;     | 4 | 80.3% | 81.2% | [link](-) |
+| CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](-), [Link2](-) |
+| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.4% | - |  [Link1](-), [Link2](-) |
+| PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% |  [Link1](-), [Link2](-) |
+| CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% |  [Link1](-), [Link2](-) |
+| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% | [Link1](-), [Link2](-) |
+| PTv3 | ScanNet200 | &check;  | 4 | 35.3% | 33.2% | [Link1](-), [Link2](-) |
+| PTv3 | nuScenes |     &check;     | 4 | 81.2% | 82.0% | [Link1](-), [Link2](-) |
+| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% |  [Link1](-), [Link2](-) |
+| PTv3 | nuScenes |     &check;     | 4 | 80.3% | 81.2% |  [Link1](-), [Link2](-) |
 
 
 ## Quick Start
