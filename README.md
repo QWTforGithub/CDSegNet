@@ -20,7 +20,7 @@ The following environment is recommended for running **_CDSegNet_** (an NVIDIA 3
 - gcc/g++: 11.4 and above
 - CUDA: 11.8 and above
 - PyTorch: 2.1.0 and above
-- python: 3.78 and above
+- python: 3.8 and above
 
 ### Environment
 
