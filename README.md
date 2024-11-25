@@ -15,12 +15,12 @@ This repo is the official project repository of the paper **_An End-to-End Robus
 ## Installation
 
 ### Requirements
-The following environment is recommended for running **_CDSegNet_** (an NVIDIA 3090 GPU or 4 NVIDIA 4090 GPUs):
+The following environment is recommended for running **_PUDM_** (an NVIDIA 3090 GPU):
 - Ubuntu: 18.04 and above
 - gcc/g++: 11.4 and above
 - CUDA: 11.8 and above
 - PyTorch: 2.1.0 and above
-- python: 3.8 and above
+- python: 3.78 and above
 
 ### Environment
 
@@ -55,7 +55,18 @@ sh compile.sh
 ...
 
 ## Model Zoo
-...
+| Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
+| :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
+| CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [link](-) |
+| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.4% | - | [link](-) |
+| PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% | [link](-) |
+| CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% | [link](-) |
+| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% |[link](-) |
+| PTv3 | ScanNet200 | &check;  | 4 | 35.3% | 33.2% |[link](-) |
+| PTv3 | nuScenes |     &check;     | 4 | 81.2% | 82.0% |[link](-) |
+| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% | [link](-) |
+| PTv3 | nuScenes |     &check;     | 4 | 80.3% | 81.2% | [link](-) |
+
 
 ## Quick Start
 ### Example
