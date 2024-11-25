@@ -55,7 +55,7 @@ sh compile.sh
 ...
 
 ## Model Zoo
-| Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
+| Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | Download |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
 | CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](-), [Link2](-) |
 | PTv3 + CNF | ScanNet |     &check;     | 4 | 77.4% | - |  [Link1](-), [Link2](-) |
