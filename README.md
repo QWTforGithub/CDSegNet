@@ -55,6 +55,8 @@ sh compile.sh
 ...
 
 ## Model Zoo
+
+### Indoor Benchmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
 | CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](-), [Link2](-) |
@@ -63,7 +65,9 @@ sh compile.sh
 | CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% |  [Link1](-), [Link2](-) |
 | PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% | [Link1](-), [Link2](-) |
 | PTv3 | ScanNet200 | &check;  | 4 | 35.3% | 33.2% | [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet200-semseg-pt-v3m1-0-base/model) |
-| PTv3 | nuScenes |     &check;     | 4 | 81.2% | 82.0% | [Link1](-), [Link2](-) |
+
+# Outdoor Benckmark
+| CDSegNet | nuScenes |     &check;     | 4 | 81.2% | 82.0% | [Link1](-), [Link2](-) |
 | PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% |  [Link1](-), [Link2](-) |
 | PTv3 | nuScenes |     &check;     | 4 | 80.3% | 81.2% |  [Link1](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/nuscenes-semseg-pt-v3m1-0-base/model) |
 
