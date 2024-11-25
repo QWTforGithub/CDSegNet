@@ -4,7 +4,7 @@ This repo is the official project repository of the paper **_An End-to-End Robus
  - [ [arXiv](...) ]
 
 ## The Overall Framework 
-<img src="assets/cdsegnet.png" alt="cdsegnet" width="900"/> 
+<img src="assets/CDSegNet.png" alt="cdsegnet" width="900"/> 
 
 ## Overview
 - [Installation](#installation)
