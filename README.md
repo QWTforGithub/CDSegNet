@@ -20,7 +20,7 @@ The following environment is recommended for running **_PUDM_** (an NVIDIA 3090 
 - gcc/g++: 11.4 and above
 - CUDA: 11.8 and above
 - PyTorch: 2.1.0 and above
-- python: 3.78 and above
+- python: 3.8 and above
 
 ### Environment
 
