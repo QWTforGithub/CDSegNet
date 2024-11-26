@@ -67,18 +67,18 @@ sh compile.sh
 ### Indoor Benchmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
-| CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](-), [Link2](-) |
-| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.5 | - |  [Link1](-), [Link2](-) |
+| CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](https://pan.baidu.com/s/1n2vu0j4rRfUC-P6FyYAGYA?pwd=8dnc), [Link2](-) |
+| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.5 | - |  [Link1](https://pan.baidu.com/s/1W6U9VSprwVbJUz_Q51Oknw?pwd=un4b), [Link2](-) |
 | PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% |  [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet-semseg-pt-v3m1-0-base/model) |
-| CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% |  [Link1](-), [Link2](-) |
-| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% | [Link1](-), [Link2](-) |
+| CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% |  [Link1](https://pan.baidu.com/s/14xtgpT5p2GC3TBoLucppMA?pwd=a4dq), [Link2](-) |
+| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% | [Link1](https://pan.baidu.com/s/17SrfL22kUuSd2kXlLR6Xxg?pwd=t7hi), [Link2](-) |
 | PTv3 | ScanNet200 | &check;  | 4 | 35.3% | 33.2% | [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet200-semseg-pt-v3m1-0-base/model) |
 
 ### Outdoor Benckmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
-| CDSegNet | nuScenes |     &check;     | 4 | 81.2% | 82.0% | [Link1](-), [Link2](-) |
-| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% |  [Link1](-), [Link2](-) |
+| CDSegNet | nuScenes |     &check;     | 4 | 81.2% | 82.0% | [Link1](https://pan.baidu.com/s/1Sv79gQr4WUg5TI3fYLbCbA?pwd=ec3e), [Link2](-) |
+| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | 82.8% |  [Link1](https://pan.baidu.com/s/1M1PkmfgnpQO9XXJH6o0jKw?pwd=5i2i), [Link2](-) |
 | PTv3 | nuScenes |     &check;     | 4 | 80.3% | 81.2% |  [Link1](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/nuscenes-semseg-pt-v3m1-0-base/model) |
 
 
