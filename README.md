@@ -49,6 +49,14 @@ pip install open3d
 #   gcc/g++ : 11.4 
 cd CDSegNet-main
 sh compile.sh
+
+# install flashattention
+# 1. cuda11.8 -> cuda11.6
+#   vim ~/.bashrc
+#   export PATH="/usr/local/cuda-11.8/bin:$PATH" -> export PATH="/usr/local/cuda-11.6/bin:$PATH"
+#   export CUDA_HOME="/usr/local/cuda-11.8" -> export CUDA_HOME="/usr/local/cuda-11.6"
+# 2. please download flushattention flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl from https://github.com/Dao-AILab/flash-attention/releases?page=2
+# 3. pip install flushattention flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
 ## Data Preparation
