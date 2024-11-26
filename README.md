@@ -15,7 +15,7 @@ This repo is the official project repository of the paper **_An End-to-End Robus
 ## Installation
 
 ### Requirements
-The following environment is recommended for running **_PUDM_** (an NVIDIA 3090 GPU):
+The following environment is recommended for running **_CDSegNet_** (an NVIDIA 3090 GPU or four NVIDIA 4090 GPUs):
 - Ubuntu: 18.04 and above
 - gcc/g++: 11.4 and above
 - CUDA: 11.8 and above
