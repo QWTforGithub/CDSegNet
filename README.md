@@ -68,7 +68,7 @@ sh compile.sh
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
 | CDSegNet | ScanNet |     &check;     | 4 | 77.9% | 74.5% | [Link1](https://pan.baidu.com/s/1n2vu0j4rRfUC-P6FyYAGYA?pwd=8dnc), [Link2](-) |
-| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.5 | - |  [Link1](https://pan.baidu.com/s/1W6U9VSprwVbJUz_Q51Oknw?pwd=un4b), [Link2](-) |
+| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.5% | - |  [Link1](https://pan.baidu.com/s/1W6U9VSprwVbJUz_Q51Oknw?pwd=un4b), [Link2](-) |
 | PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% |  [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet-semseg-pt-v3m1-0-base/model) |
 | CDSegNet | ScanNet200 |     &check;     | 4 | 36.0% | 34.1% |  [Link1](https://pan.baidu.com/s/14xtgpT5p2GC3TBoLucppMA?pwd=a4dq), [Link2](-) |
 | PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.5% | 33.7% | [Link1](https://pan.baidu.com/s/17SrfL22kUuSd2kXlLR6Xxg?pwd=t7hi), [Link2](-) |
