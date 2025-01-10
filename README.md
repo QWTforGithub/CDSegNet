@@ -57,7 +57,7 @@ sh compile.sh
 #   export CUDA_HOME="/usr/local/cuda-11.8" -> export CUDA_HOME="/usr/local/cuda-11.6"
 # 2. Please download flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 #   a. The official website: https://github.com/Dao-AILab/flash-attention/releases?page=2
-#   b. Our links: Baidu Netdisk and Google Drive in Model Zoom
+#   b. Our links: Baidu Netdisk and Google Drive in Model Zoo
 # 3. pip install flushattention flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
