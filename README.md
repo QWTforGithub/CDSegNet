@@ -66,7 +66,7 @@ sh compile.sh
 ...
 
 ## Model Zoo
-<img src="assets/compare_robustness.png" alt="compare" width="900"/> 
+<img src="assets/compare.png" alt="compare" width="900"/> 
 
 ### Indoor Benchmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
