@@ -72,7 +72,7 @@ sh compile.sh
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | Test mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: | :---: |
 | CDSegNet | ScanNet |     &check;     | 1,2,4 | 77.9% | 74.5% | [Link1](https://pan.baidu.com/s/1SrcC710jDxSugvyfqzA_pQ?pwd=jxnr), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
-| PTv3 + CNF | ScanNet |     &check;     | 2,4 | 77.7% | - |  [Link1](https://pan.baidu.com/s/1SrcC710jDxSugvyfqzA_pQ?pwd=jxnr), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
+| PTv3 + CNF | ScanNet |     &check;     | 2,4 | 77.7% | 73.9% |  [Link1](https://pan.baidu.com/s/1SrcC710jDxSugvyfqzA_pQ?pwd=jxnr), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 | ScanNet |     &check;     | 4 | 77.6% | 73.6% |  [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet-semseg-pt-v3m1-0-base/model) |
 | CDSegNet | ScanNet200 |     &check;     | 2,4 | 36.0% | 34.1% |  [Link1](https://pan.baidu.com/s/1SrcC710jDxSugvyfqzA_pQ?pwd=jxnr), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 + CNF | ScanNet200 | &check;  | 2,4 | 35.9% | 33.7% | [Link1](https://pan.baidu.com/s/1SrcC710jDxSugvyfqzA_pQ?pwd=jxnr), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
