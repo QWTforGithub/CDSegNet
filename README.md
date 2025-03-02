@@ -204,18 +204,18 @@ The preprocessing supports semantic and instance segmentation for both `ScanNet2
 ### Indoor Benchmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: |
-| CDSegNet | ScanNet |     &check;     | 1,2,4 | 77.9% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
-| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.7% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
+| CDSegNet | ScanNet |     &check;     | 1,2,4 | 77.9% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
+| PTv3 + CNF | ScanNet |     &check;     | 4 | 77.7% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 | ScanNet |     &check;     | 4 | 77.6% | [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet-semseg-pt-v3m1-0-base/model) |
-| CDSegNet | ScanNet200 |     &check;     | 4 | 36.3% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
-| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.9% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
+| CDSegNet | ScanNet200 |     &check;     | 4 | 36.3% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
+| PTv3 + CNF | ScanNet200 | &check;  | 4 | 35.9% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 | ScanNet200 | &check;  | 4 | 35.3% | [Link](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/scannet200-semseg-pt-v3m1-0-base/model) |
 
 ### Outdoor Benckmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: |
-| CDSegNet | nuScenes |     &check;     | 4 | 81.2% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
-| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](-) |
+| CDSegNet | nuScenes |     &check;     | 4 | 81.2% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
+| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 | nuScenes |     &check;     | 4 | 80.3% | [Link1](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/nuscenes-semseg-pt-v3m1-0-base/model) |
 
 
