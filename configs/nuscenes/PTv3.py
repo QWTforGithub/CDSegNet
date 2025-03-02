@@ -155,7 +155,7 @@ param_dicts = [dict(keyword="block", lr=0.0002)]
 
 # dataset settings
 dataset_type = "NuScenesDataset"
-data_root = "/root/dataset/nuscenes"
+data_root = "data/nuscenes"
 ignore_index = ignore_index
 names = [
     "barrier",
