@@ -23,7 +23,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
 
  - Traditional DDPMs excel in generative tasks but are limited to 3D perception tasks due to **_multi-step iterations_** and **_the difficulty fitting semantic label scores_**. 
  - 1) **_multi-step iterations:_** PTv3 infers on ScanNet in 22s (no test-time augmentation (TTA)), while a DDPM built on PTv3 takes nearly 7h for 1000 steps (Fig.2). Even with acceleration strategies, but: 1) suboptimal results, 2) still multi-step requirements.
- - 2) **_the difficulty of fitting semantic label scores:_** It is unrealistic to directly fit the score of point cloud semantic labels according to traditional DDPMs end-to-end because the distribution of 3D scenes is too complex. This is similar to using DDPMs to do 3D scene generation tasks end-to-end.
+ - 2) **_the difficulty of fitting semantic label scores:_** It is unrealistic to directly fit the score of point cloud semantic labels according to traditional DDPMs in an end-to-end manner, because the distribution of 3D scenes is too complex. This is similar to using DDPMs to do 3D scene generation tasks in an end-to-end manner.
  - So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
  - This is the main contribution of our paper. 
  - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks._** 
