@@ -7,6 +7,17 @@ This repo is the official project repository of the paper **_An End-to-End Robus
 ## The Overall Framework 
 <img src="assets/overall.png" alt="cdsegnet" width="900"/> 
 
+## Citation
+If you find our paper useful to your research, please cite our work as an acknowledgment.
+```bib
+@article{qu2024end,
+  title={An End-to-End Robust Point Cloud Semantic Segmentation Network with Single-Step Conditional Diffusion Models},
+  author={Qu, Wentao and Wang, Jing and Gong, YongShun and Huang, Xiaoshui and Xiao, Liang},
+  journal={arXiv preprint arXiv:2411.16308},
+  year={2024}
+}
+```
+
 ## Motivation
 Below, we give a brief explanation of the motivation of our paper, hoping to help readers further understand our idea.
 
