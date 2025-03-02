@@ -662,7 +662,7 @@ class Embedding(PointModule):
         point = self.stem(point)
         return point
 
-### ------------- Transfer Module ------------- ###
+### ------------- Feature Fusion Module ------------- ###
 class SerializedCrossRestomer(PointModule):
     def __init__(
         self,
@@ -1335,7 +1335,7 @@ class TransferModule(PointModule):
         n_point = self.cross_block2(n_point,c_point)
 
         return c_point,n_point
-### ------------- Transfer Module ------------- ###
+### ------------- Feature Fusion Module ------------- ###
 
 @MODELS.register_module("PT-v3m1")
 class PointTransformerV3(PointModule):
@@ -1711,7 +1711,7 @@ class PointTransformerV3(PointModule):
             # ---- Diffusion Model Recon Head ----- #
             ### ----------------- Diffusion Model ----------------- ###
 
-            ### ----------------- Transfer Model ----------------- ###
+            ### ----------------- Feature Fusion Module ----------------- ###
             self._tm_dec0 = TransferModule(
 
                 q_channels=n_dec_channels[-1],
@@ -1752,7 +1752,7 @@ class PointTransformerV3(PointModule):
                 tm_feat=tm_feat,
                 tm_restomer=tm_restomer
             )
-            ### ----------------- Transfer Model ----------------- ###
+            ### ----------------- Feature Fusion Module ----------------- ###
 
     def forward(self, c_point=None, n_point=None):
 
@@ -1793,7 +1793,7 @@ class PointTransformerV3(PointModule):
             n_point = self._n_enc[3](n_point)  # 32435 --- 8428, 128 --- 256
             n_point = self._n_enc[4](n_point)  # 8428 --- 2196, 256 --- 512
 
-            # 5. Transfer Module
+            # 5. Feature Fusion Module
             c_point, n_point = self._tm_dec0(c_point, n_point)  # 2196 --- 2196
 
             # 6. Decoder
