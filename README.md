@@ -90,7 +90,7 @@ sh compile.sh
 # 2. please download flushattention flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl from:
 #      a. The official website: https://github.com/Dao-AILab/flash-attention/releases?page=2
 #      b. Our links: Baidu Netdisk and Google Drive in Model Zoom
-# 3. pip install flushattention flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
+# 3. pip install flash_attn-2.5.7+cu118torch2.1cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
 ## Data Preparation
