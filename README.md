@@ -96,62 +96,14 @@ sh compile.sh
 
 ## Data Preparation
 - Please refer to the [data processing](https://github.com/Pointcept/Pointcept#data-preparation) of PTv3.
-### ScanNet v2
-
-The preprocessing supports semantic and instance segmentation for both `ScanNet20`, `ScanNet200`, and `ScanNet Data Efficient`.
-- Download the [ScanNet](http://www.scan-net.org/) v2 dataset.
-- Run preprocessing code for raw ScanNet as follows:
-
-  ```bash
-  # RAW_SCANNET_DIR: the directory of downloaded ScanNet v2 raw dataset.
-  # PROCESSED_SCANNET_DIR: the directory of the processed ScanNet dataset (output dir).
-  python pointcept/datasets/preprocessing/scannet/preprocess_scannet.py --dataset_root ${RAW_SCANNET_DIR} --output_root ${PROCESSED_SCANNET_DIR}
-  ```
-- (Optional) Download ScanNet Data Efficient files:
-  ```bash
-  # download-scannet.py is the official download script
-  # or follow instructions here: https://kaldir.vc.in.tum.de/scannet_benchmark/data_efficient/documentation#download
-  python download-scannet.py --data_efficient -o ${RAW_SCANNET_DIR}
-  # unzip downloads
-  cd ${RAW_SCANNET_DIR}/tasks
-  unzip limited-annotation-points.zip
-  unzip limited-reconstruction-scenes.zip
-  # copy files to processed dataset folder
-  mkdir ${PROCESSED_SCANNET_DIR}/tasks
-  cp -r ${RAW_SCANNET_DIR}/tasks/points ${PROCESSED_SCANNET_DIR}/tasks
-  cp -r ${RAW_SCANNET_DIR}/tasks/scenes ${PROCESSED_SCANNET_DIR}/tasks
-  ```
-- (Alternative) The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)], please agree the official license before download it.
+### ScanNet/ScanNet200
+- The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)], please agree the official license before download it.
 
 - Link processed dataset to codebase:
   ```bash
   # PROCESSED_SCANNET_DIR: the directory of the processed ScanNet dataset.
   mkdir data
   ln -s ${PROCESSED_SCANNET_DIR} ${CODEBASE_DIR}/data/scannet
-  ```
-
-### ScanNet200
-- Download the [ScanNet++](https://kaldir.vc.in.tum.de/scannetpp/) dataset.
-- Run preprocessing code for raw ScanNet++ as follows:
-  ```bash
-  # RAW_SCANNETPP_DIR: the directory of downloaded ScanNet++ raw dataset.
-  # PROCESSED_SCANNETPP_DIR: the directory of the processed ScanNet++ dataset (output dir).
-  # NUM_WORKERS: the number of workers for parallel preprocessing.
-  python pointcept/datasets/preprocessing/scannetpp/preprocess_scannetpp.py --dataset_root ${RAW_SCANNETPP_DIR} --output_root ${PROCESSED_SCANNETPP_DIR} --num_workers ${NUM_WORKERS}
-  ```
-- Sampling and chunking large point cloud data in train/val split as follows (only used for training):
-  ```bash
-  # PROCESSED_SCANNETPP_DIR: the directory of the processed ScanNet++ dataset (output dir).
-  # NUM_WORKERS: the number of workers for parallel preprocessing.
-  python pointcept/datasets/preprocessing/sampling_chunking_data.py --dataset_root ${PROCESSED_SCANNETPP_DIR} --grid_size 0.01 --chunk_range 6 6 --chunk_stride 3 3 --split train --num_workers ${NUM_WORKERS}
-  python pointcept/datasets/preprocessing/sampling_chunking_data.py --dataset_root ${PROCESSED_SCANNETPP_DIR} --grid_size 0.01 --chunk_range 6 6 --chunk_stride 3 3 --split val --num_workers ${NUM_WORKERS}
-  ```
-- (Alternative) The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannetpp-compressed)], please agree the official license before download it.
-- Link processed dataset to codebase:
-  ```bash
-  # PROCESSED_SCANNETPP_DIR: the directory of the processed ScanNet dataset.
-  mkdir data
-  ln -s ${PROCESSED_SCANNETPP_DIR} ${CODEBASE_DIR}/data/scannetpp
   ```
 
 ### nuScenes
