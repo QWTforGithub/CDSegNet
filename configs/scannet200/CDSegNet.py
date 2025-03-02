@@ -152,9 +152,9 @@ param_dicts = [dict(keyword="block", lr=0.0002)]
 
 # dataset settings
 dataset_type = "ScanNet200Dataset"
-data_root = "/root/dataset/scannet"
-data_val_root = "/root/dataset/scannet"
-data_test_root = "/root/dataset/scannet"
+data_root = "data/scannet"
+data_val_root = "data/scannet"
+data_test_root = "data/scannet"
 # data_root = "/root/dataset/scannet_short"
 # data_root = "/root/dataset/scannet_debug"
 
