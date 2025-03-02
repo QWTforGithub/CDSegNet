@@ -212,7 +212,7 @@ The preprocessing supports semantic and instance segmentation for both `ScanNet2
 
 ### Training
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}/{config}' folder.
-GPUs and batch size are not limited. We successfully generate 77.9% mIoU on ScanNet with 1 (BS=2), 2 (BS-4), and 4 (BS=8) GPUs.
+GPUs and batch size are not limited. We successfully generate 77.9% mIoU on ScanNet with 1 (BS=2), 2 (BS=4), and 4 (BS=8) GPUs.
 ```
 # Training on ScanNet
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_ScanNet.py
