@@ -6,7 +6,7 @@ This repo is the official project repository of the paper **_An End-to-End Robus
  - **_Released model weights are temporarily as the model structure of CDSegNet may be adjusted later._**
 ## The Overall Framework 
 <img src="assets/overall.png" alt="cdsegnet" width="900"/> 
-CN : Conditional Network <br/> NN : Noise Network
+**_CN : Conditional Network <br/> NN : Noise Network_**
 
 ## Citation
 If you find our paper useful to your research, please cite our work as an acknowledgment.
