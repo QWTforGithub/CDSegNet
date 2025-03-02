@@ -79,7 +79,7 @@ pip install open3d
 # Please ensure:
 #   nvcc : 11.8
 #   gcc/g++ : 11.4 
-cd CDSegNet-main
+cd CDSegNet-main/scripts
 sh compile.sh
 
 # install flash-attention
