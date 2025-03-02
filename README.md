@@ -244,7 +244,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 
 #### Extensions
 - If you want to extend our work, we recommend using PTv3+CNF instead of CDSegNet. Since PTv3+CNF has only half the parameters of CDSegNet, the performance of the two is quite close.
-- We found that on the nuScene test set, PTv3+CNF achieved 82.8% mIoU (PTv3 ->81.2%, CDSegNet->82.0% mIoU) when trained only on the training set of nuScenes. PTv3+PPT showed 83.0% mIoU, but this has more than double the number of parameters of PTv3+PPT and uses multiple datasets for joint training. 
+- We found that on the nuScene test set, **_PTv3+CNF achieved 82.8% mIoU (PTv3 ->81.2%, CDSegNet->82.0% mIoU) when trained only on the training set of nuScenes._** PTv3+PPT showed 83.0% mIoU, but PTv3+PPT has the double number of parameters than PTv3+CNF and uses multiple datasets for joint training (we guess there are even 5 datasets). 
 
 ### Testing
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
