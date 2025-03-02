@@ -246,6 +246,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 - If you want to extend our work, we recommend using PTv3+CNF instead of CDSegNet. Since PTv3+CNF has only half the parameters of CDSegNet, the performance of the two is quite close.
 - We found that on the nuScene test set, **_PTv3+CNF achieved 82.8% mIoU (PTv3 ->81.2%, CDSegNet->82.0% mIoU) when trained only on the training set of nuScenes._** PTv3+PPT showed 83.0% mIoU, but PTv3+PPT has the double number of parameters than PTv3+CNF and uses multiple datasets for joint training (we guess there are even 5 datasets).
 
+#### Experiments of Sparsity Robustness
+-  This first randomly samples 5%, 10%, 12.5%, 25%, and 50% from the training and validation set, respectively.
+-  Subsequently, the model is trained and fitted on the under-sampled training and validation set, while performing inference on the entire validation set.
+
 ### Testing
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
 ```
