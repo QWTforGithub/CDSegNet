@@ -2,6 +2,7 @@
 
 This repo is the official project repository of the paper **_An End-to-End Robust Point Cloud Semantic Segmentation Network with Single-Step Conditional Diffusion Models_**. 
  - [ [arXiv](https://arxiv.org/abs/2411.16308) ]
+ - **_Our paper has been accepted by CVPR 2025!_**
  - **_Released model weights are temporarily as the model structure of CDSegNet may be adjusted later._**
 ## The Overall Framework 
 <img src="assets/overall.png" alt="cdsegnet" width="900"/> 
