@@ -122,15 +122,7 @@ sh compile.sh
   │── v1.0-trainval 
   │── v1.0-test
   ```
-- Run information preprocessing code (modified from OpenPCDet) for nuScenes as follows:
-  ```bash
-  # NUSCENES_DIR: the directory of downloaded nuScenes dataset.
-  # PROCESSED_NUSCENES_DIR: the directory of processed nuScenes dataset (output dir).
-  # MAX_SWEEPS: Max number of sweeps. Default: 10.
-  pip install nuscenes-devkit pyquaternion
-  python pointcept/datasets/preprocessing/nuscenes/preprocess_nuscenes_info.py --dataset_root ${NUSCENES_DIR} --output_root ${PROCESSED_NUSCENES_DIR} --max_sweeps ${MAX_SWEEPS} --with_camera
-  ```
-- (Alternative) The preprocess nuScenes information data can also be downloaded [[here](https://huggingface.co/datasets/Pointcept/nuscenes-compressed)] (only processed information, still need to download raw dataset and link to the folder), please agree the official license before download it.
+- The preprocess nuScenes information data can also be downloaded [[here](https://huggingface.co/datasets/Pointcept/nuscenes-compressed)] (only processed information, still need to download raw dataset and link to the folder), please agree the official license before download it.
 
 - Link raw dataset to processed NuScene dataset folder:
   ```bash
