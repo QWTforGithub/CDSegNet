@@ -28,7 +28,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
  - So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
  - This is the main contribution of our paper. 
  - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks, ._** 
- - 2) **_We attempt to separate the advantages and limitations of DDPMs, thus proposing CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations._** 
+ - 2) **_We attempt to separate the advantages and limitations of DDPMs, and as a result, we propose CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations._** 
  - **_Models with CNF still essentially qualify as DDPMs, as trained models can perform DDPM inference.The key difference from traditional DDPMs is simply the output from CN instead of NN._** 
  - As a framework, CNF is built on a backbone (e.g.~PTv3),  thus inevitably slightly increasing computational cost. However, CNF is more cost-effective compared to traditional DDPMs (NCF). 
  - Our paper's aim is not to propose a novel backbone but to **_introduce a new perspective for applying DDPMs to 3D perception tasks_** (CDSegNet is an instance of CNF).
