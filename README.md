@@ -27,8 +27,8 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
  - 2) **_the difficulty of fitting semantic label scores:_** It is unrealistic to directly fit the score of point cloud semantic labels according to traditional DDPMs in an end-to-end manner, because the distribution of 3D scenes is too complex than that of 2D scenes (the best proof is that DDPMs can be used to achieve image segmentation in an end-to-end manner, but so far, there is no successful case for point cloud segmentation). This is similar to using DDPMs to do 3D scene generation tasks in an end-to-end manner.
  - So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
  - This is the main contribution of our paper. 
- - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks, attempting to separate the advantages and limitations of DDPMs.._** 
- - 2) **_We proposes CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations._** 
+ - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks, ._** 
+ - 2) **_We attempt to separate the advantages and limitations of DDPMs, thus proposing CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations._** 
  - **_Models with CNF still essentially qualify as DDPMs, as trained models can perform DDPM inference.The key difference from traditional DDPMs is simply the output from CN instead of NN._** 
  - As a framework, CNF is built on a backbone (e.g.~PTv3),  thus inevitably slightly increasing computational cost. However, CNF is more cost-effective compared to traditional DDPMs (NCF). 
  - Our paper's aim is not to propose a novel backbone but to **_introduce a new perspective for applying DDPMs to 3D perception tasks_** (CDSegNet is an instance of CNF).
