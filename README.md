@@ -22,14 +22,14 @@ If you find our paper useful to your research, please cite our work as an acknow
 ## Motivation
 Below, we give a brief explanation of the motivation of our paper, hoping to help readers further understand our idea.
 
- - Traditional DDPMs excel in generative tasks but are limited to 3D perception tasks due to **_multi-step iterations_** and **_the difficulty fitting semantic label scores_**. 
+#### Traditional DDPMs excel in generative tasks but are limited to 3D perception tasks due to **_multi-step iterations_** and **_the difficulty fitting semantic label scores_**. 
  - 1) **_multi-step iterations:_** PTv3 infers on ScanNet in 22s (no test-time augmentation (TTA), performing inference for four 4090 NVIDIA GPUs), while a DDPM built on PTv3 takes nearly 7h for 1000 steps (Fig.2). Even with acceleration strategies, but: 1) suboptimal results, 2) still multi-step requirements.
  - 2) **_the difficulty of fitting semantic label scores:_** It is unrealistic to directly fit the score of point cloud semantic labels according to traditional DDPMs in an end-to-end manner, because the distribution of 3D scenes is too complex than that of 2D scenes (the best proof is that DDPMs can be used to achieve image segmentation in an end-to-end manner, but so far, there is no successful case for point cloud segmentation). This is similar to using DDPMs to do 3D scene generation tasks in an end-to-end manner.
- - So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
+#### So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
  - This is the main contribution of our paper. 
  - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks._** 
  - 2) **_We attempt to separate the advantages and limitations of DDPMs, and as a result, we propose CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations. The key idea is The key idea is to use CN as the dominant network, determining the segmentation result, and NN as the auxiliary network, enhancing the features in CN._**
- - <font color="#ff0000">Why can our CNF effectively maintains advantages while avoiding limitations of DDPMs? </font>
+#### Why can our CNF effectively maintains advantages while avoiding limitations of DDPMs?
  - 1) **_As CN is as the dominant network, avoiding multiple iterations during inference, because the output from NN is no longer important._**
  - 2) **_As CN is as the dominant network, alleviate the necessity of excessively fitting the scores from the task target for NN, improving the convergence speed of training._**
  - 3) **_Moveover, CNF maintains the DDPMs training rules during training, thus preserving data sparsity and noise robustness._**
