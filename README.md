@@ -29,9 +29,10 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
  - This is the main contribution of our paper. 
  - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks._** 
  - 2) **_We attempt to separate the advantages and limitations of DDPMs, and as a result, we propose CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations. The key idea is The key idea is to use CN as the dominant network, determining the segmentation result, and NN as the auxiliary network, enhancing the features in CN._**
- -  &emsp;&emsp;  a. As CN is as the dominant network, avoiding multiple iterations during inference, because the output from NN is no longer important.
- -  &emsp;&emsp;  b. As CN is as the dominant network, alleviate the necessity of excessively fitting the scores from the task target for NN, improving the convergence speed of training.
- -  &emsp;&emsp;  c. Moveover, CNF maintains the DDPMs training rules during training, thus preserving data sparsity and noise robustness.
+ - Why can our CNF effectively maintains advantages while avoiding limitations of DDPMs?:
+ - 1) **_As CN is as the dominant network, avoiding multiple iterations during inference, because the output from NN is no longer important._**
+ - 2) **_As CN is as the dominant network, alleviate the necessity of excessively fitting the scores from the task target for NN, improving the convergence speed of training._**
+ - 3) **_Moveover, CNF maintains the DDPMs training rules during training, thus preserving data sparsity and noise robustness._**
  - **_Models with CNF still essentially qualify as DDPMs, as trained models can perform DDPM inference.The key difference from traditional DDPMs is simply the output from CN instead of NN._**
  - As a framework, CNF is built on a backbone (e.g.~PTv3),  thus inevitably slightly increasing computational cost. However, CNF is more cost-effective compared to traditional DDPMs (NCF). 
  - Our paper's aim is not to propose a novel backbone but to **_introduce a new perspective for applying DDPMs to 3D perception tasks_** (CDSegNet is an instance of CNF).
