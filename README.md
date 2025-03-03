@@ -167,7 +167,7 @@ sh compile.sh
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | checkpoint |
 | :---: | :---: |:---------------:| :---: | :---: | :---: |
 | CDSegNet | nuScenes |     &check;     | 4 | 81.2% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
-| PTv3 + CNF | nuScenes |     &check;     | 4 | 80.8% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
+| PTv3 + CNF | nuScenes |     &check;     | 4 | 81.0% | [Link1](https://pan.baidu.com/s/1rAUHa4OHmT_Q1I2Pi_sVog?pwd=1111), [Link2](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing) |
 | PTv3 | nuScenes |     &check;     | 4 | 80.3% | [Link1](https://huggingface.co/Pointcept/PointTransformerV3/tree/main/nuscenes-semseg-pt-v3m1-0-base/model) |
 
 
