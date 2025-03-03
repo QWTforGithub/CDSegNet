@@ -177,6 +177,9 @@ sh compile.sh
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}/{config}' folder.
 GPUs and batch size are not limited. We successfully generate 77.9% mIoU on ScanNet with **_1 (BS=2), 2 (BS=4), and 4 (BS=8) GPUs_**.
 ```
+#  Configure the dataset path:
+#    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
+#    b. data_root = "Your dataset path"
 # Training on ScanNet
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_ScanNet.py
 # Training on ScanNet200
@@ -203,10 +206,18 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 ### Testing
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
 ```
+#  1. Configure the dataset path:
+#    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
+#    b. data_root = "Your dataset path"
+#  2. Configure the weight path:
+#    a. CDSegNet-main/tools/train_CDSegNet_{dataset}.py
+#    b. weight = "the downloading checkpoint"
+
 # Testing on ScanNet
-CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py weight = "weight_path"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py
 # We also can test at a specified noise level on ScanNet:
-CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py weight = "weight_path" noise_level = 0.1
+# CDSegNet-main/tools/train_CDSegNet_{dataset}.py, noise_level=0.1 (0.01~0.1)
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py
 # Testing on ScanNet200
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet200.py weight = "weight_path"
 
@@ -218,5 +229,5 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_nuScenes.py weight = "we
 #  a. inference on an NVIDIA GPU
 #  b. no test-time augmentation (TTA) (aug_transform=[])
 #  c. no fragmented inference (grid_size=0.0001)
-CUDA_VISIBLE_DEVICES=0 python tools/test_time.py weight="weight_path"
+CUDA_VISIBLE_DEVICES=0 python tools/test_time.py
 ```
