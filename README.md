@@ -203,14 +203,20 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 ### Testing
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
 ```
-# Training on ScanNet
+# Testing on ScanNet
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py weight = "weight_path"
 # We also can test at a specified noise level on ScanNet:
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py weight = "weight_path" noise_level = 0.1
-# Training on ScanNet200
+# Testing on ScanNet200
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet200.py weight = "weight_path"
 
-# Training on nuScenes
+# Testing on nuScenes
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_nuScenes.py weight = "weight_path"
 
+# Testing foe time
+# Please ensuring:
+#  a. inference on an NVIDIA GPU
+#  b. no test-time augmentation (TTA) (aug_transform=[])
+#  c. no fragmented inference (grid_size=0.0001)
+CUDA_VISIBLE_DEVICES=0 python tools/test_time.py weight="weight_path"
 ```
