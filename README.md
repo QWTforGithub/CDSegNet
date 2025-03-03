@@ -36,7 +36,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
  - **_Models with CNF still essentially qualify as DDPMs, as trained models can perform DDPM inference.The key difference from traditional DDPMs is simply the output from CN instead of NN._**
  - As a framework, CNF is built on a backbone (e.g.~PTv3),  thus inevitably slightly increasing computational cost. However, CNF is more cost-effective compared to traditional DDPMs (NCF). 
  - Our paper's aim is not to propose a novel backbone but to **_introduce a new perspective for applying DDPMs to 3D perception tasks_** (CDSegNet is an instance of CNF).
- -  <font color=gray size=72>color=gray</font>
+
 ## Explanation of Figure 2
 <img src="assets/compare.png" alt="compare" width="900"/> <br/>
 
