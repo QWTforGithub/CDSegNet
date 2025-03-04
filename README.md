@@ -156,7 +156,7 @@ sh compile.sh
   ```
 
 ## Model Zoo
-<img src="assets/comapre_table.png" alt="comapre_table" width="900"/> 
+<img src="assets/compare_table.png" alt="compare_table" width="900"/> 
 
 ### Indoor Benchmark
 | Model | Benchmark | Only Training Data? | Num GPUs | Val mIoU | checkpoint |
