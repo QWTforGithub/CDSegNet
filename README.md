@@ -230,7 +230,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet200.py weight = "
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_nuScenes.py weight = "weight_path"
 
 # Testing for time
-# Please ensuring:
+# Please ensure:
 #  a. inference on an NVIDIA GPU
 #  b. no test-time augmentation (TTA) (aug_transform=[])
 #  c. no fragmented inference (grid_size=0.0001)
