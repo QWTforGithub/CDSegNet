@@ -184,7 +184,7 @@ GPUs and batch size are not limited. We successfully generate 77.9% mIoU on Scan
 ```
 #  Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
-#    b. data_root = "Your dataset path"
+#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet/data/nuscenes", data_root = "/../CDSegNet/data/nuscenes"
 # Training on ScanNet
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_ScanNet.py
 # Training on ScanNet200
@@ -213,7 +213,7 @@ We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nu
 ```
 #  1. Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
-#    b. data_root = "Your dataset path"
+#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet/data/nuscenes", data_root = "/../CDSegNet/data/nuscenes"
 #  2. Configure the weight path:
 #    a. CDSegNet-main/tools/train_CDSegNet_{dataset}.py
 #    b. weight = "the downloading checkpoint"
@@ -224,10 +224,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py
 # CDSegNet-main/tools/train_CDSegNet_{dataset}.py, noise_level=0.1 (0.01~0.1)
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet.py
 # Testing on ScanNet200
-CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet200.py weight = "weight_path"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_ScanNet200.py
 
 # Testing on nuScenes
-CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_nuScenes.py weight = "weight_path"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/test_CDSegNet_nuScenes.py
 
 # Testing for time
 # Please ensure:
