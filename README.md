@@ -184,7 +184,7 @@ GPUs and batch size are not limited. We successfully generate 77.9% mIoU on Scan
 ```
 #  Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
-#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet/data/nuscenes", data_root = "/../CDSegNet/data/nuscenes"
+#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet-main/data/scannet or nuscenes"
 # Training on ScanNet
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_ScanNet.py
 # Training on ScanNet200
@@ -213,7 +213,7 @@ We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nu
 ```
 #  1. Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
-#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet/data/nuscenes", data_root = "/../CDSegNet/data/nuscenes"
+#    b. data_root = "Your dataset path", for example, data_root = "/../CDSegNet-main/data/scannet or nuscenes"
 #  2. Configure the weight path:
 #    a. CDSegNet-main/tools/train_CDSegNet_{dataset}.py
 #    b. weight = "the downloading checkpoint"
