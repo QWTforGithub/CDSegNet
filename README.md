@@ -6,8 +6,9 @@ This repo is the official project repository of the paper **_An End-to-End Robus
  - **_Released model weights are temporarily as the model structure of CDSegNet may be adjusted later._**
 ## The Overall Framework 
 <img src="assets/overall.png" alt="cdsegnet" width="900"/> <br/>
-**_CN : Conditional Network_** <br/> **_NN : Noise Network_**
-
+**_CN : Conditional Network_** <br/> **_NN : Noise Network_** <br/>
+1) For end-to-end traditional DDPMs (Noise-Contional Framework, NCF), the Conditional Network (CN) extracts the conditional features for generating guidance. Meanwhile, the Noise Network (NN) predicts the scores from the task target, dominating the results of tasks (see left(a)).
+2) For CNF (Conditional-Noise Framework), CNF treats NN and CN as the auxiliary network and the dominant network in 3D tasks, respectively.
 ## Citation
 If you find our paper useful to your research, please cite our work as an acknowledgment.
 ```bib
