@@ -118,7 +118,7 @@ sh compile.sh
   ```
 
 ### nuScenes
-- Download the official [nuScene](https://www.nuscenes.org/nuscenes#download) dataset (with Lidar Segmentation) and organize the downloaded files as follows:
+- Download the official [nuScenes](https://www.nuscenes.org/nuscenes#download) dataset (with Lidar Segmentation) and organize the downloaded files as follows:
   ```bash
   NUSCENES_DIR
   │── samples
