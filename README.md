@@ -194,7 +194,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_ScanNet200.py
 CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 ```
 
-#### Training Tricks
+#### Important!!! : Training Tricks
 - CDSegNet is tied to PTv3, but we found that PTv3 training is unstable, and even with a fixed seed we cannot ensure that the results are roughly the same each time (fluctuations are around 1.0%mIoU).
 - The reasons for instability are: 1) Grid pooling 2) Sparse convolution
 - This once caused us headaches and sadness, because when we adjusted the parameters, we could not determine whether the poor performance was due to parameter problems or randomness problems.
