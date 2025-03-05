@@ -29,7 +29,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
 #### So why do we still use DDPMs for semantic segmentation tasks? Isn’t it better for us to use non-DDPMs directly?
  - This is the main contribution of our paper. 
  - 1) **_Our paper analyzes the advantages (noise and sparsity robustness) and weaknesses (more iterations) of DDPMs in 3D perception tasks._** 
- - 2) **_We attempt to separate the advantages and limitations of DDPMs, and as a result, we propose CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations. The key idea is The key idea is to use CN as the dominant network, determining the segmentation result, and NN as the auxiliary network, enhancing the features in CN._**
+ - 2) **_We attempt to separate the advantages and limitations of DDPMs, and as a result, we propose CNF, a novel end-to-end framework of DDPMs that maintains performance and robustness while avoiding iterations. The key idea is to use CN as the dominant network, determining the segmentation result, and NN as the auxiliary network, enhancing the features in CN._**
 #### Why can our CNF effectively maintains advantages while avoiding limitations of DDPMs?
  - 1) **_As CN is as the dominant network, avoiding multiple iterations during inference, because the output from NN is no longer important._**
  - 2) **_As CN is as the dominant network, alleviate the necessity of excessively fitting the scores from the task target for NN, improving the convergence speed of training._**
