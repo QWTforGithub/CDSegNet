@@ -210,8 +210,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
   3)  [[train.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/engines/train.py)] : Implementation of the training processing (Trainer).
   4)  [[test.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/engines/test.py)] : Implementation of the testing processing (SemSegTester).
   5)  [[evaluator.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/engines/hooks/evaluator.py)] : Implementation of the validating processing (SemSegEvaluator).
-  6)  [[scannet.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/datasets/scannet.py)] : Implementation of the scannet dataset (get_data_list(), get_data()).
-  7)  [[nuscenes.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/datasets/nuscenes.py)] : Implementation of the nuscenes dataset (get_data_list(), get_data()).
+  6)  [[scannet.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/datasets/scannet.py)] : Implementation of the scannet dataloader (get_data_list(), get_data()).
+  7)  [[nuscenes.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/datasets/nuscenes.py)] : Implementation of the nuscenes dataloader (get_data_list(), get_data()).
 
 ### Experiments of Sparsity Robustness
 -  This first randomly samples 5%, 10%, 12.5%, 25%, and 50% from the training and validation set, respectively.
