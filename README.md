@@ -48,6 +48,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
 - ⑤ : CN+CD -> This auxiliary network does not have a diffusion process (regressing the point cloud coordinates via MSE), while the dominant network has a [[Categorical](https://proceedings.neurips.cc/paper/2021/file/958c530554f78bcd8e97125b70e6973d-Paper.pdf)] diffusion process. The result is dominated the NN.
 - ⑥ : GD+CD -> This auxiliary network have a [[Gaussion](https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf)] diffusion process (the input contains random noise and conditional point cloud), while the dominant network has a [[Categorical](https://proceedings.neurips.cc/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf)] diffusion process. The result is dominated the NN.
 - Note: **_The above combination (NCF,③,④,⑤,⑥) is the same as the network framework of Baseline (②) and CDSegNet (CNF,①)._**
+- **_For the implementation of these combinations, please see [[default.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/models/default.py)]_**
 
 ## Overview
 - [Installation](#installation)
