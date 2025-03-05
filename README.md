@@ -203,7 +203,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 
 #### Extensions
 - If you want to extend our work, we recommend using PTv3+CNF instead of CDSegNet. Since PTv3+CNF has only half the parameters of CDSegNet, the performance of the two is quite close.
-- We found that on the nuScene test set, **_[[PTv3+CNF](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing)] achieved 82.8% mIoU (PTv3 ->81.2%, CDSegNet->82.0% mIoU) when trained only on the training set of nuScenes._** PTv3+PPT showed 83.0% mIoU, but PTv3+PPT has the double number of parameters than PTv3+CNF and uses multiple datasets for joint training (we guess there are even 5 datasets).
+- We found that on **_the nuScene testing set-**, **_[[PTv3+CNF](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing)] achieved 82.8% mIoU (PTv3 ->81.2%, CDSegNet->82.0% mIoU) when trained only on the training set of nuScenes._** PTv3+PPT showed 83.0% mIoU, but PTv3+PPT has the double number of parameters than PTv3+CNF and uses multiple datasets for joint training (we guess there are even 5 datasets).
 - Core files:
 - 1)  [[default.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/models/default.py)] : Implementation of different DDPMs (NCF and CNF).
   2)  [[point_transformer_v3m1_base.py](https://github.com/QWTforGithub/CDSegNet/blob/main/pointcept/models/point_transformer_v3/point_transformer_v3m1_base.py)] : Implementation of the backbone.
