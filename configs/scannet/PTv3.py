@@ -1,7 +1,7 @@
 _base_ = ["../_base_/default_runtime.py"]
 
 # ---- common ---
-batch_size = 12 # bs=3 for 1 GPU, bs=6 for 2 GPUs, bs=12 for 4GPUs
+batch_size = 12 # bs=2 for 1 GPU, bs=6 for 2 GPUs, bs=12 for 4GPUs
 num_worker = 24 # the num_worker is double batch_size.
 mix_prob = 0.8
 
