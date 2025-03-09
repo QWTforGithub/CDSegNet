@@ -145,7 +145,7 @@ optimizer = dict(type="AdamW", lr=0.002, weight_decay=0.005)
 scheduler = dict(
     type="OneCycleLR",
     max_lr=[0.002, 0.0002],
-    pct_start=0.05,
+    pct_start=0.04,
     anneal_strategy="cos",
     div_factor=10.0,
     final_div_factor=1000.0,
