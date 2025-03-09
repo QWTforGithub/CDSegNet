@@ -140,16 +140,16 @@ model = dict(
 # scheduler settings
 epoch = 800
 
-optimizer = dict(type="AdamW", lr=0.002, weight_decay=0.05)
+optimizer = dict(type="AdamW", lr=0.006, weight_decay=0.05)
 scheduler = dict(
     type="OneCycleLR",
-    max_lr=[0.002, 0.0002],
-    pct_start=0.50,
+    max_lr=[0.006, 0.0006],
+    pct_start=0.05,
     anneal_strategy="cos",
     div_factor=10.0,
     final_div_factor=1000.0,
 )
-param_dicts = [dict(keyword="block", lr=0.0002)]
+param_dicts = [dict(keyword="block", lr=0.0006)]
 
 # dataset settings
 dataset_type = "ScanNetDataset"
