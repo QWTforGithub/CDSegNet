@@ -39,6 +39,7 @@ Below, we give a brief explanation of the motivation of our paper, hoping to hel
 #### Our paper's aim is not to propose a novel backbone but to **_introduce a new perspective for applying DDPMs to 3D perception tasks_** (CDSegNet is an instance of CNF).
 
 ## Explanation of Figure 2
+<img src="assets/combinations.png" alt="combinations" width="900"/> <br/>
 <img src="assets/compare.png" alt="compare" width="900"/> <br/>
 
 - We try several combinations for conditional DDPMs built on the baseline (②) on ScanNet in (a). The same architecture as CDSegNet(CNF,①) but using traditional DDPMs for segmentation (NCF,③,④,⑤,⑥)
