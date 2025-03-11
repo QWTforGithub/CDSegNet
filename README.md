@@ -181,7 +181,7 @@ sh compile.sh
 
 ### Training
 We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}/{config}' folder.
-GPUs and batch size are not limited. We successfully generate 77.9% mIoU on ScanNet with **_1 (BS=2), 2 (BS=4), and 4 (BS=8) GPUs_**.
+GPUs and batch size are not limited. We successfully generate 77.9% mIoU on ScanNet with **_1 (BS=2), 2 (BS=4), and 4 (BS=8) GPUs [Link](https://drive.google.com/drive/folders/1iRS5hMci8ZWW4uGYTmmXCBA-wwjjbjTW?usp=sharing)_**.
 ```
 #  Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
