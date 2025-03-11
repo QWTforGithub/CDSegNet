@@ -12,7 +12,7 @@ from .builder import MODELS, build_model
 @MODELS.register_module()
 class DefaultSegmentorV2(nn.Module):
     '''
-        GD + CN : Gaussion(Continous) Diffusion + Conditional Network
+        ①GD + CN : Gaussion(Continous) Diffusion + Conditional Network
     '''
     def __init__(
         self,
