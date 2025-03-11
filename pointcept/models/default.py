@@ -13,7 +13,7 @@ from .builder import MODELS, build_model
 @MODELS.register_module()
 class DefaultSegmentorV2(nn.Module):
     '''
-        ①GD + CN : Gaussion(Continous) Diffusion + Conditional Network
+        ①GD + CN(CNF) : Gaussion(Continous) Diffusion + Conditional Network
     '''
     def __init__(
         self,
@@ -497,7 +497,7 @@ class DefaultSegmentorV2(nn.Module):
 @MODELS.register_module()
 class ContinuousDMSegmentor(nn.Module):
     '''
-        ③CN + GD : Conditional(No Dffusion Process) Network (CN) +  Gaussion(Continous) Diffusion (CD)
+        ③CN + GD(NCF) : Conditional(No Dffusion Process) Network (CN) +  Gaussion(Continous) Diffusion (CD)
     '''
     def __init__(
         self,
@@ -952,7 +952,7 @@ class ContinuousDMSegmentor(nn.Module):
 @MODELS.register_module()
 class CCDMSegmentor(nn.Module):
     '''
-        ④GD + GD : Gaussion(Continuous) Diffusion (GD) +  Gaussion(Continuous) Diffusion (GD)
+        ④GD + GD(NCF) : Gaussion(Continuous) Diffusion (GD) +  Gaussion(Continuous) Diffusion (GD)
     '''
     def __init__(
         self,
@@ -1366,7 +1366,7 @@ class CCDMSegmentor(nn.Module):
 @MODELS.register_module()
 class DiscreteDMSegmentor(nn.Module):
     '''
-        ⑤CN + CD : Conditional(No Dffusion Process) Network (CN) +  Categorical(Discrete) Diffusion (CD)
+        ⑤CN + CD(NCF) : Conditional(No Dffusion Process) Network (CN) +  Categorical(Discrete) Diffusion (CD)
     '''
     def __init__(
         self,
@@ -1996,7 +1996,7 @@ class DiscreteDMSegmentor(nn.Module):
 @MODELS.register_module()
 class CDDMSegmentor(nn.Module):
     '''
-        ⑥GD + CD : Gaussion(Continuous) Diffusion (GD) +  Categorical(Discrete) Diffusion (CD)
+        ⑥GD + CD(NCF) : Gaussion(Continuous) Diffusion (GD) +  Categorical(Discrete) Diffusion (CD)
     '''
     def __init__(
         self,
