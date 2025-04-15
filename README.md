@@ -200,7 +200,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 - CDSegNet is tied to PTv3, but we found that **_the training of PTv3 is unstable_**, and even with a fixed seed we cannot ensure that the results are roughly the same each time (fluctuations are around 1.0%mIoU).
 - The reasons for instability are: 1) Grid pooling 2) Sparse convolution
 - This once caused us headaches and sadness, because when we adjusted the parameters, we could not determine whether the poor performance was due to parameter problems or randomness problems.
-- With unremitting efforts, we found a way to stabilize performance. That is to save the checkpoint in the middle, and then load the training repeatedly. For example, on ScanNet, 100 epochs are required, and we save the checkpoint at 70 epoch. Then, repeatedly train from 70 epoch to 100 epoch. This may get the most stable results.
+- With unremitting efforts, we found a way to stabilize performance. **_That is to save the checkpoint in the middle, and then load the training repeatedly_**. For example, on ScanNet, 100 epochs are required, and we save the checkpoint at 70 epoch. Then, repeatedly train from 70 epoch to 100 epoch. This may get the most stable results.
 
 #### Extensions
 - If you want to extend our work, we recommend using PTv3+CNF instead of CDSegNet. Since PTv3+CNF has only half the parameters of CDSegNet, the performance of the two is quite close.
@@ -219,7 +219,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_CDSegNet_nuScenes.py
 -  Subsequently, the model is trained and fitted on the under-sampled training and validation set, while performing inference on the entire validation set.
 
 ### Testing
-We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to train CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
+We provide two indoor datasets (ScanNet, ScanNet200) and one ourdoor dataset (nuScenes) to test CDSegNet. The results are in the 'CDSegNet-main/exp/{dataset}_test/{config}' folder.
 ```
 #  1. Configure the dataset path:
 #    a. CDSegNet-main/configs/{dataset}/CDSegNet.py
