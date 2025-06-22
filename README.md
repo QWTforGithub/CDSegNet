@@ -110,7 +110,7 @@ sh compile.sh
 ## Data Preparation
 - Please refer to the [data processing](https://github.com/Pointcept/Pointcept#data-preparation) of PTv3.
 ### ScanNet/ScanNet200
-- The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)] or [[here](https://pan.baidu.com/s/1RWMiyOpNwAEf9pCb5pizdw?pwd=1111)](code:1111), please agree the official license before download it.
+- The preprocess data of PTv3 can be directly downloaded [[here](https://pan.baidu.com/s/1RWMiyOpNwAEf9pCb5pizdw?pwd=1111)](code:1111) or [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)], please agree the official license before download it.
 
 - Link processed dataset to codebase:
   ```bash
@@ -120,7 +120,7 @@ sh compile.sh
   ```
 
 ### nuScenes
-- Download the official [nuScenes](https://www.nuscenes.org/nuscenes#download) dataset (with Lidar Segmentation) and organize the downloaded files as follows:
+- Download the official [nuScenes](https://www.nuscenes.org/nuscenes#download) (or [nuScenes](https://pan.baidu.com/s/1Rsbi-Q_2EUm05lwQgn8T3Q?pwd=1111)) dataset (with Lidar Segmentation) and organize the downloaded files as follows:
   ```bash
   NUSCENES_DIR
   │── samples
