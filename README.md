@@ -110,7 +110,7 @@ sh compile.sh
 ## Data Preparation
 - Please refer to the [data processing](https://github.com/Pointcept/Pointcept#data-preparation) of PTv3.
 ### ScanNet/ScanNet200
-- The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)], please agree the official license before download it.
+- The preprocess data of PTv3 can be directly downloaded [[here](https://huggingface.co/datasets/Pointcept/scannet-compressed)]/[[here](https://pan.baidu.com/s/1RWMiyOpNwAEf9pCb5pizdw?pwd=1111)](code:1111), please agree the official license before download it.
 
 - Link processed dataset to codebase:
   ```bash
